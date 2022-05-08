@@ -1,0 +1,86 @@
+html{
+  font-size: 62.5%;
+
+}
+body {
+  background: black;
+  font-family: sans-serif;
+}
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+  
+}
+.btn{
+  background: rgb(242, 99, 47);
+  border-radius: 4rem;
+  padding: 2rem 3vw;
+}
+.btn--streched{
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+
+}
+.list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+
+}
+.list__items {
+  color: white;
+  padding: 0 1.5rem ;
+  font-size: 2rem;
+}
+.nav__container a {
+  color: white;
+  text-decoration: none;
+}
+.nav__container a:hover {
+  color: rgb(158, 155, 155);
+}
+.hero__content{
+  color: white;
+ align-self: center;
+ width: 100%;
+}
+.hero__block{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+}
+.hero__img{
+  width: 100%;
+  transform: translateX(30);
+}
+
+.hero__content{
+  padding: 2rem;
+}
+.block__heading{
+  font-size: 6rem;
+  font-family: sans-serif;
+  margin: 0;
+}
+.hero__content >a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.hero__para{
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+}
+
+/* @media screen and (min-width:800px) {
+    .list{
+    }
+    .list__items{
+
+    }
+} */
