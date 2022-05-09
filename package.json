@@ -1,6 +1,26 @@
 {
-  "devDependencies": {
-    "cssnano": "^4.1.11",
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
     "postcss": "^8.4.13"
-  }
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junaidxgit/demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junaidxgit/demo/issues"
+  },
+  "homepage": "https://github.com/junaidxgit/demo#readme"
 }
