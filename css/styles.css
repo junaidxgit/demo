@@ -3,24 +3,38 @@ html{
 
 }
 body {
-  background: black;
   font-family: sans-serif;
-  width: 100%;
+  font-size: 2rem; 
 }
+
 *,
 *::before,
 ::after {
   box-sizing: border-box;
   
 }
+.block__para{
+  font-size: 2.4rem;
+  /* font-weight: 600; */
+  
+}
+.block{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .btn{
   background: rgb(242, 99, 47);
   border-radius: 4rem;
   padding: 2rem 3vw;
+  white-space: nowrap;
 }
 .btn--streched{
   padding-left: 6rem;
   padding-right: 6rem;
+}
+.block--black{
+  background: black;
 }
 .nav__container {
     display: flex;
@@ -31,7 +45,12 @@ body {
   display: flex;
   list-style: none;
   justify-content: space-between;
+  margin: 0;
+  align-items: center;
 
+}
+.list{
+  list-style: none;
 }
 .list__items {
   color: white;
@@ -53,6 +72,8 @@ body {
 .hero__block{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .hero__img{
   width: 100%;
@@ -66,16 +87,178 @@ body {
   font-size: 6rem;
   font-family: sans-serif;
   margin: 0;
+  color: rgb(44, 44, 153);
 }
 .hero__content >a{
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
 }
-.hero__para{
+.hero__content .block__heading{
+  color: white;
+}
+.hero__content .block__para{
   margin-top: 1rem;
   margin-bottom: 4rem;
   font-size: 2rem;
+  color: #b9c3cf;
+  font-weight: 500;
 }
+.plan__block{
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.plan__block  .block__heading{
+  font-size: 4rem;
+}
+.plan__block .block__para{
+  color: #b9c3cf;
+  margin-top: 1rem;
+}
+.input__container{
+  border: 2px solid rgb(158, 155, 155);
+  max-width: 678px;
+  margin: 3rem auto;
+  border-radius: 35px;
+  justify-content: space-between;
+  box-shadow: 0 0 20px 5px grey;
+  display: flex;
+  border: 0;
+}
+.input__bar{
+  padding: 2rem 0;
+  padding-left: 2rem;
+  flex-grow: 1;
+  border: 0;
+  outline: 0;
+  white-space: nowrap;
+  border-radius: 35px;
+  width: 0;
+}
+.input__container .btn{
+  margin: 3px 2px;
+}
+
+.input__container > a{
+  text-decoration: none;
+  color: white;
+}
+.block__badges{
+  display: flex;
+  justify-content: space-between;
+  color: #1b0760;
+  font-weight: 700;
+  list-style: none;
+  max-width: 700px;
+  transform: translateY(20);
+  margin: 4rem auto;
+  padding-inline-start: 0;
+}
+.block__badge{
+  background: #00d9ff;
+  
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+.card{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+  gap: 6rem 5rem;
+  margin: 8rem;
+
+}
+.card__block  {
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 15px #f3f3f3;
+  transition: transform .15s;
+  margin: 0 auto;
+  overflow: hidden;
+
+}
+.card__block:hover{
+  transform: scale(1.1);
+}
+.card__header{
+  padding: 2rem 7%;
+  background: #00d9ff;
+  color: white;
+  line-height: 4.5rem;
+}
+.card__header .block__heading{
+  font-size: 2rem;
+  color: white;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+.card__price{
+  font-size: 5rem;
+}
+.card__duration{
+  opacity: 0.8;
+  margin-right: 0.5rem;
+}
+.card__header .block__badge{
+  background: #02cdf1;
+  font-size: 1.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.card__discription{
+  display: inline-block;
+}
+.card__block .list{
+  color: #1b0760;
+  display:list-item;
+  line-height: 5rem;
+  margin: 1rem 0;
+}
+.card__body{
+  padding: 2rem 2rem;
+}
+
+.card__block img{
+  margin-right: 1.5rem;
+}
+.card__body .btn{
+  width: 100%;
+  border: 2px solid #1b0760;
+  color: #1b0760;
+  background: white;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.card__body .btn:hover{
+  background: #1b0760;
+  color: white;
+  cursor: pointer;
+}
+.card__primary .card__header{
+  background: #2584ff;
+}
+.card__primary .block__badge{
+  background: #126de4;
+}
+.plan .card__header{
+  position: relative;
+}
+.plan .card__header::before{
+  content: url("../icons/popular.svg");
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  right: 18px;
+}
+.card__primary{
+  transform: scale(1.1);
+}
+.card__primary:hover{
+  transform: scale(1.2);
+}
+
 
 
